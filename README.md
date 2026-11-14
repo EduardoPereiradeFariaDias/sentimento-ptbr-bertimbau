@@ -1,4 +1,4 @@
-Untitled0.ipynb
+
 # Análise de sentimento em avaliações de e-commerce com BERTimbau
 
 Classificador de sentimento (negativo, neutro, positivo) para avaliações de produtos em português, feito com fine-tuning do [BERTimbau Base](https://huggingface.co/neuralmind/bert-base-portuguese-cased) e comparado com um baseline clássico (TF-IDF + regressão logística).
@@ -64,7 +64,7 @@ A amostra é pequena, então esses padrões são indícios, não conclusões est
 
 ## Como reproduzir
 
-1. Abra o notebook [`Untitled0.ipynb`](Untitled0.ipynb) no Google Colab com GPU (T4).
+1. Abra o notebook [`sentimento_bertimbau.ipynb`](sentimento_bertimbau.ipynb) no Google Colab com GPU (T4).
 2. Rode as células em ordem: instalação, carga dos dados, baseline, fine-tuning e avaliação.
 3. Para publicar o seu próprio modelo, faça login no Hugging Face (`notebook_login()`) com um token de escrita. Nunca escreva o token no código.
 **Observação:** versões novas da biblioteca `datasets` não aceitam o script original do B2W-Reviews01. O notebook carrega a versão em Parquet do dataset (`revision="refs/convert/parquet"`).
